@@ -39,3 +39,8 @@ make clean
 make
 make install
 ```
+
+
+
+If you want to show hipe compile detail, edit /path/to/lib/hipe/llvm/hipe_llvm_main.erl
+remove io:format() comment
