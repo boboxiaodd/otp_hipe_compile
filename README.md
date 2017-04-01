@@ -12,7 +12,7 @@ Download otp source http://www.erlang.org/download
 Enter <code>/path/to/lib/kernel/src/</code>
 And edit Makefile
 
-```shell
+```bash
 152 #ifeq ($(NATIVE_LIBS_ENABLED),yes)
 153 ERL_COMPILE_FLAGS += +native +"{hipe,[to_llvm]}"
 154 #endif
