@@ -9,7 +9,7 @@ yum install llvm
 
 Download otp source http://www.erlang.org/download
 
-Enter /path/to/lib/kernel/src/
+Enter <code>/path/to/lib/kernel/src/</code>
 And edit Makefile
 
 ```shell
@@ -19,7 +19,7 @@ And edit Makefile
 155 ERL_COMPILE_FLAGS += -I../include -Werror
 ```
 
-Enter /path/to/lib/stdlib/src/
+Enter <code>/path/to/lib/stdlib/src/</code>
 Edit Makefile ...(same of kernel)
 
 
@@ -42,5 +42,5 @@ make install
 
 
 
-If you want to show hipe compile detail, edit /path/to/lib/hipe/llvm/hipe_llvm_main.erl
+If you want to show hipe compile detail, edit <code>/path/to/lib/hipe/llvm/hipe_llvm_main.erl</code>
 remove io:format() comment
