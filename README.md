@@ -1,10 +1,16 @@
 # otp_hipe_compile
 erlang kernel,stdlib use hipe compile
 
-Download otp source
+Install llvm..
+
+```shell
+yum install llvm
+```
+
+Download otp source http://www.erlang.org/download
 
 Enter /path/to/lib/kernel/src/
-Edit Makefile
+And edit Makefile
 
 ```shell
 152 #ifeq ($(NATIVE_LIBS_ENABLED),yes)
@@ -15,6 +21,9 @@ Edit Makefile
 
 Enter /path/to/lib/stdlib/src/
 Edit Makefile ...(same of kernel)
+
+
+Other module ,such as sasl,inets same as above
 
 ```shell
 ./configure
