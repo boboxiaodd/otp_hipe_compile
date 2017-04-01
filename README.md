@@ -34,6 +34,7 @@ make install
 if you rebuild source
 ```shell
 ./configure
+make clean
 ./otp_build autoconf
 make
 make install
