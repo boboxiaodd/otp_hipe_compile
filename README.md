@@ -1,4 +1,27 @@
 server-ctl
+启动服务：
+```shell
+./server-ctl start
+```
+关闭服务:
+```shell
+./server-ctl shutdown
+```
+
+热更新模块
+```shell
+./server-ctl restart task_server
+./server-ctl restart task_server luck_server uuid_server
+```
+cowboy router 更新，需要在 application 里面实现 reload 函数
+```shell
+./server-ctl graceful
+```
+进入当前运行的服务节点内
+```shell
+./server-ctrl debug
+```
+
 
 ```shell
 #!/usr/bin/env bash
