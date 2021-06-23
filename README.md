@@ -2,7 +2,7 @@ server-ctl
 
 ```shell
 #!/usr/bin/env bash
-APPNAME="web_agent_app" ##对应
+APPNAME="web_agent_app" ##对应 application 文件
 NODENAME="webagent"
 
 ERL_A="+A 64"     ## 异步线程池大小， 默认为0
