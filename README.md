@@ -34,7 +34,7 @@ ERL_Q="+Q 102400" ## PORT总数限制 +Q 1024
 ERL_P="+P 102400" ## 最大并发进程数
 ERL_S="" #+stbt db +sbwt none +sub true" ## 保证每个调度器业务平均
 ERL_FORK="" #%-env ERL_NO_VFORK 1" ##改用fork open_port
-ERL_PA="-pa _build/default/lib/*/ebin"
+ERL_PA="-pa _build/default/lib/*/ebin" ##rebar3 创建的目录结构
 
 ERL_COOKIE="vmq"
 ERL_CONFIG="priv/app.config"
